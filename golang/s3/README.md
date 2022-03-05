@@ -8,4 +8,5 @@ Golang example
 
 # Steps
 1. `$ docker-compose up`
-2. `$ go run main.go`
+2. `$ aws --endpoint-url=http://localhost:4566 --no-sign-request s3 mb s3://test-dev`
+3. `$ go run main.go`
